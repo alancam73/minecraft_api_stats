@@ -10,6 +10,11 @@ eg online v offline, num players, version etc
 * setup the correct IAM permissions - this python script uses EC2, DynamoDB
 * create a table in DynamoDB, and define date_time as the primary key
 
+### Environment variables
+* dynamodb_tbl : the name of the DynamoDB table to hold the stats
+* inst_name : the EC2 Instance name (i-abc123 etc)
+* mcsrv_name : The Minecraft Server API with your minecraft server IP & port eg https://api.mcsrvstat.us/2/1.2.3.4:25565
+
 ### Example output
 ```
 date_time   p_online   p_players   p_version
