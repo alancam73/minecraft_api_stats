@@ -24,3 +24,7 @@ date_time   p_online   p_players   p_version
 
 ### Triggers
 This lambda can be run standalone or via a trigger eg hourly via an EventBridge rule eg rate(1 hour)
+
+### Caveats
+This works fine for viewing in DynamoDB but a subsequent import into QuickSight will not get the online, num-players sub-attributes
+A future update will add AWS Glue (Relationalize or Unbox) to flatten the fields for BI
